@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE professores SYSTEM "../dtd/professores.dtd">
+<professores>
+  <professor id="1">
+    <nome>Jose da Silva</nome>
+    <email>jose@dasilva.com</email>
+  </professor>
+</professores>

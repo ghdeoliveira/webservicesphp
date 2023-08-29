@@ -5,15 +5,15 @@ class Export{
     public function xml($fileName, $data){
         $file = $fileName . '.xml';
 
-        $xml = "<?xml version='1.0' encoding='UTF-8'?>";
-        $xml .= "<{$fileName}>";
+        $xml = "<?xml version='1.0' encoding='UTF-8'?>\n";
+        $xml .= "<{$fileName}>\n";
 
         for($i=0; $i < count($data); $i++){
-            $xml .= "<row>";
+            $xml .= "  <curso>\n";
             foreach($data[$i] as $k => $v){
-                $xml .= "<{$k}>$v</{$k}>";
+                $xml .= "    <{$k}>$v</{$k}>\n";
             }
-            $xml .= "</row>";
+            $xml .= "  </curso>\n";
         }
 
         $xml .= "</{$fileName}>";

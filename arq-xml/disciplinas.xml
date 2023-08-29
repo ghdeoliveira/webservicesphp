@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE disciplinas SYSTEM "../dtd/disciplinas.dtd">
+<disciplinas>
+  <disciplina id="1">
+    <codigo>STB0332</codigo>
+    <nome>WebServices</nome>
+    <carga>60h</carga>
+    <ementa>XML, JSON, REST ...</ementa>
+    <semestre>6</semestre>
+    <curso>TSI</curso>
+  </disciplina>
+</disciplinas>

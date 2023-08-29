@@ -1,16 +1,9 @@
 <?php
 
-//require_once "Database.php";
 require_once "./conexao.php";
 
-//$db = new Database();
-//$conexao = $db->connect();
-//var_dump($conexao);
-
-$sql = "SELECT c.id, c.nome, c.semestres, p.nome as coordenador FROM curso c JOIN professor p ON c.id_coordenador = p.id;";
-//$stmt = $conexao->query($sql);
-//$cursos = $stmt->fetchAll(PDO::FETCH_OBJ);
-//var_dump($cursos);
+$sql = "SELECT c.id, c.nome, c.semestres, p.nome as coordenador 
+        FROM curso c JOIN professor p ON c.id_coordenador = p.id;";
 
 $stmt = mysqli_query($conn, $sql);
 $data = [];
@@ -51,11 +44,13 @@ if(isset($_GET['export']) && $_GET['export'] == 'xml'){
             <h1>Lista de Cursos</h1>
         </div>
         <div class="row">
-            <buttom class="dropdown-button btn right" data-activates="btn-export">Exportar</buttom>
-            <ul id="btn-export" class="dropdown-content" style="margin-top: 40px;">
-                <li><a href="?export=excel&&fileName=cursos">Excel</a></li>
+            <a href="?export=xml&&fileName=cursos">
+            <button href="?export=xml&&fileName=cursos" class="dropdown-button btn right" data-activates="btn-export">Exportar</button>
+            </a>
+            <!-- <ul id="btn-export" class="dropdown-content" style="margin-top: 40px;">
+                <li><a href="?export=excel&&fileName=cursos">Excel</a></li> 
                 <li><a href="?export=xml&&fileName=cursos">XML</a></li>
-            </ul>
+            </ul> -->
         </div>
         <div class="row">
             <table class="bordered highlight">

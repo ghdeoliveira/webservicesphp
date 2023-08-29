@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE cursos SYSTEM "cursos.dtd">
-<cursos>
-  <curso id="1">
-    <nome/>
-    <semestres/>
-    <coordenador/>
-  </curso>
-</cursos>

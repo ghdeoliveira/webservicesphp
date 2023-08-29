@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE cursos SYSTEM "../dtd/cursos.dtd">
+<cursos>
+  <curso id="1">
+    <nome>Informatica Basica</nome>
+    <semestres>1</semestres>
+    <coordenador>Maria Joana</coordenador>
+  </curso>
+</cursos>

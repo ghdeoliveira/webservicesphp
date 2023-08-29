@@ -1,0 +1,5 @@
+<!ELEMENT professores (professor+)>
+<!ELEMENT professor (nome, email)>
+<!ATTLIST professor id CDATA #REQUIRED>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
