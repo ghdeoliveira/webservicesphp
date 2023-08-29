@@ -1,9 +1,13 @@
 <?php
 
-    $dom = new DOMDocument();
+    //require_once "cursos.php";
+
+    $dom = new DOMDocument('1.0','UTF-8');
+
     $arq = "cursos.xml";
 
-    // cria DOCTYP - DTD
+
+    // cria DOCTYPE - DTD
     $imp = new DOMImplementation();
     $dtd = $imp -> createDocumentType('cursos', '', 'cursos.dtd');
 
@@ -39,5 +43,9 @@
     else {
         echo ('Não válido');
     }
+
+    // foreach ($cursos as $cruso) {
+    //     $dom -> createElement('nome', $curso -> $nome);
+    // }
 
 ?>

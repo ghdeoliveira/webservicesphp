@@ -14,6 +14,8 @@ class Database {
             $dsn = "mysql:host=".$this->host.";dbname=".$this->db;
             // make a database connection
             $pdo = new PDO($dsn, $this->user, $this->pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+            //echo "Conexão realizada com sucesso!";
             
         } catch (PDOException $e) {
             die($e->getMessage());
